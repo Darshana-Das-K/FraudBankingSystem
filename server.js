@@ -9,7 +9,7 @@ app.use(require('cors')());
 const db = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
-    password: '1100', // Change if needed
+    password: '1100', 
     database: 'fraudbanking',
     port: 3306
 });
@@ -80,8 +80,7 @@ app.post('/simulate-normal-emi', (req, res) => {
       // Calculate interest on the current asset receivable.
       const interest = calculateInterest(currentAmount, interestRate, 12);
       
-      // Determine effective EMI:
-      // If remaining asset is less than 10,000, pay exactly (asset + interest)
+  
       let effectiveEmi = fixedEmiAmount;
       if (currentAmount < fixedEmiAmount) {
         effectiveEmi = currentAmount + interest;
@@ -150,7 +149,7 @@ app.post('/simulate-fake-loan', (req, res) => {
 });
 
 
-// // 🚀 4️⃣ Simulate Fraudulent EMI
+
 // app.post('/simulate-fraudulent-emi', (req, res) => {
 //   const { loan_id } = req.body;
 //   const emiAmount = 10000;
