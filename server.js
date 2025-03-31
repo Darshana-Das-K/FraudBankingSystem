@@ -9,7 +9,7 @@ app.use(require('cors')());
 const db = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
-    password: '1100', 
+    password: 'ridinshaji123', 
     database: 'fraudbanking',
     port: 3306
 });
