@@ -93,10 +93,10 @@ The backend should now be running on `http://localhost:5001/`.
 ### Start the Frontend Development Server
 Navigate to the frontend folder and run:
 ```sh
-cd fraud-banking-ui
-npm start
+cd my-vite-app
+npm run dev
 ```
-The React app should now be running on `http://localhost:3000/`.
+The React app should now be running on `http://localhost:5173/`.
 
 ## API Endpoints
 The frontend communicates with a backend server running on `http://localhost:5001/`. Below are the key API endpoints used:
